@@ -19,3 +19,11 @@ done upto chapter 2 till 9AM
 
  # 12-05-2021:
 done handson on chapter 4 & 5 
+
+# 14-05-2021:
+done examples on TYPE SCRIPT & Angular
+
+# 15-05-2021:
+
+done example on ng for
+
