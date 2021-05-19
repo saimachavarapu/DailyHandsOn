@@ -27,3 +27,7 @@ done examples on TYPE SCRIPT & Angular
 
 done example on ng for
 
+
+# 19-05-2021
+
+updated upto 19th day work
