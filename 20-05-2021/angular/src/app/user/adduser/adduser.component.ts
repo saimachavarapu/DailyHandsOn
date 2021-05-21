@@ -17,8 +17,8 @@ this.signupForm=new FormGroup({​​​​​
 id:new FormControl(null, Validators.required), 
 username:new FormControl(null, Validators.required), //Note we can add more than one validator, if we have email we can add validator for the email.
 password:new FormControl(null, Validators.required), 
-phone:new FormControl(null, Validators.required)
-// company: new FormControl(null, Validators.required)
+phone:new FormControl(null, Validators.required),
+address: new FormControl(null, Validators.required)
     }​​​​​);
   }​​​​​
 onSubmit(): void {​​​​​

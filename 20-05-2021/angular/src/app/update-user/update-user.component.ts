@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserservicesService } from '../services/userservices.service';
 
 @Component({
   selector: 'app-update-user',
@@ -6,10 +9,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./update-user.component.css']
 })
 export class UpdateUserComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+   
+  constructor(private employeeService: UserservicesService, private router: Router) {​​​​​ }​​​​​
+  updateForm: FormGroup;
+  ngOnInit(): void {​​​​​
+  this.updateForm=new FormGroup({​​​​​
+  id:new FormControl(null, Validators.required),
+  password:new FormControl(null, Validators.required), 
+  username:new FormControl(null, Validators.required), //Note we can add more than one validator, if we have email we can add validator for the email.
+  address:new FormControl(null, Validators.required), 
+  // age:new FormControl(null, Validators.required),
+  phone:new FormControl(null, Validators.required)
+      }​​​​​);
+  const id=localStorage.getItem('id')
+  if(+id > 0) {​​​​​
+  this.employeeService.getEmployeeById(+id).subscribe(data=>  {​​​​​
+  this.updateForm.patchValue(data);
+          }​​​​​)
+      }​​​​​
+    }​​​​​
+    
+    onSubmit(): void {​​​​​
+    this.employeeService.updateUser(this.updateForm.value).subscribe(data=> {​​​​​
+    console.log(data);  
+    this.router.navigate(['']);
+        }​​​​​);
+      }​​​​​
+    
+  
 
 }

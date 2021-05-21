@@ -3,6 +3,7 @@
 <td>Id</td>
 <td>Name</td>
 <td>password</td>
+<td>Address</td>
 <td>Phone</td>
 <td>Action</td>
 </tr>
@@ -13,8 +14,8 @@
     <td>{{user.address}}</td>
     <td>{{user.phone}}</td>
 
-<td><button class="btn btn-primary" (click)="updateUser(employee)">Update</button>
-<button class="btn btn-danger" (click)="deleteUser(employee)">Delete</button>
+<td><button class="btn btn-primary" (click)="updateUser(user)">Update</button>
+<button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
 </td>
 </tr>
 </table>

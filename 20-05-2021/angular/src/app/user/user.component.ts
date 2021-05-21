@@ -26,7 +26,7 @@ this.users=this.users.filter(e=>e !==user);
 updateUser(user: Users): void {​​​​​
 localStorage.removeItem('id');
 localStorage.setItem('id', user.id.toString());
-this.router.navigate(['update-users']);
+this.router.navigate(['update-user']);
   }​​​​​
 
 
