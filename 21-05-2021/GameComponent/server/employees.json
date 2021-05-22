@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": 908167,
+      "password": "anitha123",
+      "name": "anitha",
+      "address": "ongole",
+      "age": 22,
+      "company": "cts"
+    },
+    {
+      "id": 908168,
+      "password": "sai123",
+      "name": "sai",
+      "address": "machiliapatnam",
+      "age": 22,
+      "company": "cts"
+    },
+    {
+      "id": 908169,
+      "password": "kishore123",
+      "name": "kishore",
+      "address": "ongole",
+      "age": 22,
+      "company": "cts"
+    },
+    {
+      "id": "908200",
+      "password": "123",
+      "name": "admin",
+      "address": "234",
+      "age": "22",
+      "company": "cts"
+    },
+    {
+      "id": "908166",
+      "password": "123",
+      "name": "harsha",
+      "address": "567",
+      "age": "22",
+      "company": "cts"
+    }
+  ]
+}
